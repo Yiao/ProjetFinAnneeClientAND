@@ -3,6 +3,7 @@ package and3.supinfo.com.projetfinanneeclientand;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -28,9 +29,12 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -153,7 +157,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mPasswordView.setError(null);
 
         // Store values at the time of the login attempt.
-        String email = mEmailView.getText().toString();
+        String username = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
 
         boolean cancel = false;
@@ -166,12 +170,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             cancel = true;
         }
 
-        // Check for a valid email address.
-        if (TextUtils.isEmpty(email)) {
+        // Check for a valid username address.
+        if (TextUtils.isEmpty(username)) {
             mEmailView.setError(getString(R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
-        } else if (!isEmailValid(email)) {
+        } else if (!isEmailValid(username)) {
             mEmailView.setError(getString(R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
@@ -181,18 +185,28 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // There was an error; don't attempt login and focus the first
             // form field with an error.
             focusView.requestFocus();
-        } else {
-            // Show a progress spinner, and kick off a background task to
-            // perform the user login attempt.
-            showProgress(true);
-            mAuthTask = new UserLoginTask(email, password);
-            mAuthTask.execute((Void) null);
+        }
+        else if(username.equals("admin")&&password.equals("admin"))
+        {
+            Intent intent = new Intent(getBaseContext(), MainActivity.class);
+            startActivity(intent);}
+        else
+        {
+            Toast.makeText(getApplicationContext(), "Error uesrname or password", Toast.LENGTH_SHORT).show();
         }
     }
 
+    private boolean isUserName(String email){
+        Pattern p = Pattern.compile("[a-z][a-z]*", Pattern.CASE_INSENSITIVE);
+        Matcher m = p.matcher(email.toUpperCase());
+        return (m.matches()&&email.length()>4);
+    }
+
+
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
-        return email.contains("@");
+
+        return (isUserName(email));
     }
 
     private boolean isPasswordValid(String password) {
