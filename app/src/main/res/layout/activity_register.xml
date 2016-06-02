@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="User Name"
+                android:text="@string/text_username"
                 android:id="@+id/textView3" />
 
         </LinearLayout>
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="First Name"
+            android:text="@string/text_firstname"
             android:id="@+id/textView4" />
 
         <EditText
@@ -69,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Last Name"
+            android:text="@string/text_lastname"
             android:id="@+id/textView5" />
 
         <EditText
@@ -83,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Age"
+            android:text="@string/text_age"
             android:id="@+id/textView6" />
 
         <EditText
@@ -97,7 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Password"
+            android:text="@string/text_password"
             android:id="@+id/textView7" />
 
         <EditText
@@ -110,7 +110,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Register"
+            android:text="@string/text_register"
             android:id="@+id/button"
             android:layout_gravity="center_horizontal" />
 

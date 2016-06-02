@@ -30,4 +30,26 @@
 
     <!-- Register related Strings -->
     <string name="Register_title">Register a new user</string>
+    <string name="text_username">UserName</string>
+    <string name="text_firstname">FirstName</string>
+    <string name="text_lastname">LastName</string>
+    <string name="text_age">Age</string>
+    <string name="text_password">Password</string>
+    <string name="text_register">Register</string>
+
+
+    <!-- Pofile related Strings -->
+    <string name="Pofile_title">User Profil</string>
+    <string name="text_newusername">NewUserName</string>
+    <string name="text_oldusername">Oldusername</string>
+    <string name="text_newfirstname">NewFirstName</string>
+    <string name="text_oldfirstname">OldFirstName</string>
+    <string name="text_newname">NewName</string>
+    <string name="text_newlastname">NewLastName</string>
+    <string name="text_oldlastname">OldLastName</string>
+    <string name="text_newage">NewAge</string>
+    <string name="text_oldage">OldAge</string>
+    <string name="text_newpassword">NewPassword</string>
+    <string name="text_oldpassword">OldPassword</string>
+    <string name="text_buttom_savechange">SaveChange</string>
 </resources>
