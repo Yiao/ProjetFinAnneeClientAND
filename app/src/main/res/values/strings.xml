@@ -19,4 +19,15 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+
+    <!--__Search related Strings -->
+    <string name="search_title">Search for your trip </string>
+    <string name="departure_input">Departure town</string>
+    <string name="arrival_input">Arrival town</string>
+    <string name="search_button">Start Search !</string>
+
+
+    <!-- Register related Strings -->
+    <string name="Register_title">Register a new user</string>
 </resources>
