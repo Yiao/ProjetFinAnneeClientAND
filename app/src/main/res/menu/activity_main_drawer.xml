@@ -18,14 +18,15 @@
             android:id="@+id/nav_register"
             android:icon="@drawable/ic_menu_register"
             android:title="Register" />
-        <item
-            android:id="@+id/nav_login"
-            android:icon="@drawable/ic_menu_login"
-            android:title="Login" />
+
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Account">
         <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_menu_login"
+                android:title="Login" />
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"

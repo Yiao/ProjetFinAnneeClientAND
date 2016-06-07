@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/list_item_thubnail" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Arrival"
+        android:id="@+id/list_item_arrival"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/list_item_thubnail"
+        android:layout_toEndOf="@+id/list_item_thubnail" />
+
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Depart"
+        android:id="@+id/list_item_depart"
+        android:layout_below="@+id/list_item_arrival"
+        android:layout_toRightOf="@+id/list_item_thubnail"
+        android:layout_toEndOf="@+id/list_item_thubnail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="arrival"
+        android:id="@+id/list_item_arrival_text"
+        android:layout_above="@+id/list_item_depart"
+        android:layout_toRightOf="@+id/list_item_arrival"
+        android:layout_toEndOf="@+id/list_item_arrival" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="depart"
+        android:id="@+id/list_item_depart_text"
+        android:layout_below="@+id/list_item_arrival_text"
+        android:layout_toRightOf="@+id/list_item_depart"
+        android:layout_toEndOf="@+id/list_item_depart" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Add"
+        android:id="@+id/list_item_add"
+        android:layout_alignBottom="@+id/list_item_thubnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date"
+        android:id="@+id/list_item_date"
+        android:layout_below="@+id/list_item_depart"
+        android:layout_toRightOf="@+id/list_item_thubnail"
+        android:layout_toEndOf="@+id/list_item_thubnail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Prix"
+        android:id="@+id/list_item_prix"
+        android:layout_alignRight="@+id/list_item_add"
+        android:layout_alignEnd="@+id/list_item_add"
+        android:layout_alignTop="@+id/list_item_arrival_text"
+        android:layout_alignLeft="@+id/list_item_add"
+        android:layout_alignStart="@+id/list_item_add"
+        android:gravity="center" />
+</RelativeLayout>

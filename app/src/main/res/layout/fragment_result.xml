@@ -1,0 +1,10 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="and3.supinfo.com.projetfinanneeclientand.ResultFragment"
+    android:choiceMode="singleChoice"
+    android:id="@+id/lv_result">
+
+
+</ListView>
