@@ -19,6 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -40,6 +41,11 @@ public class ResultFragment extends Fragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
+
+
+
+
+
         super.onActivityCreated(savedInstanceState);
         mData = getData();
         ListView lv = (ListView) getActivity().findViewById(R.id.lv_result);

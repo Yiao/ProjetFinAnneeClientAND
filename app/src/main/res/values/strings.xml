@@ -13,7 +13,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing Username
         completions."
     </string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">RAIL COMMANDER</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -40,19 +40,31 @@
 
     <!-- Pofile related Strings -->
     <string name="Pofile_title">User Profil</string>
-    <string name="text_newusername">NewUserName</string>
-    <string name="text_oldusername">Oldusername</string>
-    <string name="text_newfirstname">NewFirstName</string>
-    <string name="text_oldfirstname">OldFirstName</string>
-    <string name="text_newname">NewName</string>
-    <string name="text_newlastname">NewLastName</string>
-    <string name="text_oldlastname">OldLastName</string>
-    <string name="text_newage">NewAge</string>
-    <string name="text_oldage">OldAge</string>
-    <string name="text_newpassword">NewPassword</string>
-    <string name="text_oldpassword">OldPassword</string>
+    <string name="text_newusername">New User Name</string>
+    <string name="text_oldusername">Old User Name</string>
+    <string name="text_newfirstname">New First Name</string>
+    <string name="text_oldfirstname">Old First Name</string>
+    <string name="text_newname">New Name</string>
+    <string name="text_newlastname">New Last Name</string>
+    <string name="text_oldlastname">Old Last Name</string>
+    <string name="text_newage">New Age</string>
+    <string name="text_oldage">Old Age</string>
+    <string name="text_newpassword">New Password</string>
+    <string name="text_oldpassword">Old Password</string>
     <string name="text_buttom_savechange">Save Change</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Search related strings -->
+    <string name="text_depart">Depart</string>
+    <string name="text_destination">Destination</string>
+    <string name="text_date">Date</string>
+    <string name="text_time">Depart Time</string>
+    <string name="bt_search">Search</string>
+    <string name="bt_departTime">Depart Time</string>
+    <string name="bt_arriveTime">Depart Time</string>
+    <string name="bt_departDate">Depart Date</string>
+
+
 </resources>

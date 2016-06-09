@@ -3,6 +3,7 @@ package and3.supinfo.com.projetfinanneeclientand;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,19 +50,9 @@ public class LoginFragment extends Fragment {
 
                 if(s_username.equals("admin")&&s_password.equals("admin"))
                 {
-                    // redirection vers l'autre fragment
-                    // Todo fragment redirection vers la liste
-
-
-                    //Set the fregment initialisation
-//            RegisterFragment registerFragment = new RegisterFragment();
-//
-//            android.support.v4.app.FragmentTransaction fragemtntTransaction =
-//                    getSupportFragmentManager().beginTransaction();
-//
-//            fragemtntTransaction.replace(R.id.fragment_container,registerFragment);
-//            fragemtntTransaction.commit();
-                    Toast.makeText(getContext(), "Right username and password", Toast.LENGTH_SHORT).show();
+                    FragmentTransaction ft = getFragmentManager().beginTransaction();
+                    ft.replace(R.id.fragment_container, new SearchFragment());
+                    ft.commit();
 
                 }
                 else

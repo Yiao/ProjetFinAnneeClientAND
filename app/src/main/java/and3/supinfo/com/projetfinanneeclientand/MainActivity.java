@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         //Set the fregment initialisation
-        ProfilFragment profilFragment = new ProfilFragment();
+        SearchFragment searchFragment = new SearchFragment();
 
         android.support.v4.app.FragmentTransaction fragemtntTransaction =
                 getSupportFragmentManager().beginTransaction();
 
-        fragemtntTransaction.replace(R.id.fragment_container,profilFragment);
+        fragemtntTransaction.replace(R.id.fragment_container,searchFragment);
         fragemtntTransaction.commit();
 
 
@@ -95,22 +95,21 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_search) {
-            //Set the fregment initialisation
-            ProfilFragment profilFragment = new ProfilFragment();
+            SearchFragment searchFragment = new SearchFragment();
 
             android.support.v4.app.FragmentTransaction fragemtntTransaction =
                     getSupportFragmentManager().beginTransaction();
 
-            fragemtntTransaction.replace(R.id.fragment_container,profilFragment);
+            fragemtntTransaction.replace(R.id.fragment_container, searchFragment);
             fragemtntTransaction.commit();
         } else if (id == R.id.nav_panel) {
             //Set the fregment initialisation
-            ResultFragment resultFragment = new ResultFragment();
+            PanelFragment panelFragment = new PanelFragment();
 
             android.support.v4.app.FragmentTransaction fragemtntTransaction =
                     getSupportFragmentManager().beginTransaction();
 
-            fragemtntTransaction.replace(R.id.fragment_container,resultFragment);
+            fragemtntTransaction.replace(R.id.fragment_container,panelFragment);
             fragemtntTransaction.commit();
 
 
@@ -144,26 +143,6 @@ public class MainActivity extends AppCompatActivity
                     getSupportFragmentManager().beginTransaction();
 
             fragemtntTransaction.replace(R.id.fragment_container,loginFragment);
-            fragemtntTransaction.commit();
-        } else if (id == R.id.nav_share) {
-
-            //Set the fregment initialisation
-            PanelFragment profilFragment = new PanelFragment();
-
-            android.support.v4.app.FragmentTransaction fragemtntTransaction =
-                    getSupportFragmentManager().beginTransaction();
-
-            fragemtntTransaction.replace(R.id.fragment_container,profilFragment);
-            fragemtntTransaction.commit();
-        } else if (id == R.id.nav_send) {
-
-            //Set the fregment initialisation
-            ProfilFragment profilFragment = new ProfilFragment();
-
-            android.support.v4.app.FragmentTransaction fragemtntTransaction =
-                    getSupportFragmentManager().beginTransaction();
-
-            fragemtntTransaction.replace(R.id.fragment_container,profilFragment);
             fragemtntTransaction.commit();
         }
 

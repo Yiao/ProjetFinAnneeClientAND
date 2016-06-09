@@ -12,6 +12,7 @@
 
     <!-- Login progress -->
     <ProgressBar
+        android:layout_marginTop="20dp"
         android:id="@+id/login_progress"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
@@ -21,6 +22,7 @@
 
     <ScrollView
         android:id="@+id/login_form"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
